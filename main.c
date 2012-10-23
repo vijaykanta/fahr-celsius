@@ -15,13 +15,13 @@ int main() {
 
 	printf("Hello there, welcome to Fahrenheit - Celsius converter program\n\n");
 	printf("Enter a number to convert to celsius (Fahrenheit): ");
-	scanf("%d", &fahr);
 	
-	if(isdigit(fahr)) {
+	scanf("%d", &fahr);
+	getchar();
+	//if(isdigit(fahr)) {
 		celsius = convert_to_celsius(fahr);
 		printf("The celsius value of %d is %d\n", fahr, celsius);
-		getchar();
-	}
-	
+	//}
+	getchar();
 	return 0;
 }
